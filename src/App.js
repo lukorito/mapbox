@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import ReactMapGL, { Marker, Popup, NavigationControl } from "react-map-gl";
 import IconSelector from "./components/IconSelector";
 import PopUpTable from "./components/PopUpTable";
 import Input from "./components/Input";
@@ -147,6 +147,7 @@ function App() {
             </button>
           </Marker>
         ))}
+        <NavigationControl />
         {selectedLocation && (
           <Popup
             latitude={selectedLocation.geometry.coordinates[1]}
