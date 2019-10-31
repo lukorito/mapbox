@@ -158,10 +158,16 @@ table {
 }
 
 .null-value {
-  color: #cc1818;
+  color: #891609;
   font-style: italic;
 }
 
 .main {
   display: flex;
+}
+
+.navigation-control {
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }

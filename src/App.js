@@ -147,7 +147,9 @@ function App() {
             </button>
           </Marker>
         ))}
-        <NavigationControl />
+        <div className="navigation-control">
+          <NavigationControl />
+        </div>
         {selectedLocation && (
           <Popup
             latitude={selectedLocation.geometry.coordinates[1]}
